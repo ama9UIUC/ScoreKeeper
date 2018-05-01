@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        minusButton1 = findViewById(R.id.minusButton);
+        minusButton1 = findViewById(R.id.minusButton1);
         team1ScoreString = findViewById(R.id.team1Score);
         minusButton1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 }
         }
         );
-        plusButton1 = findViewById(R.id.plusButton);
+        plusButton1 = findViewById(R.id.plusButton1);
         plusButton1.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View h) {
                     String team1Score = team1ScoreString.getText().toString();
