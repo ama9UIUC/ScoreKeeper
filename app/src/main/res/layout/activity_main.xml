@@ -10,11 +10,6 @@
     android:paddingTop="16dp"
     tools:context=".MainActivity">
 
-    <shape xmlns:android="http://schemas.android.com/apk/res/android"
-        android:shape="ring">
-        <solid android:color="#FFFFFF"/>
-
-    </shape>
 
     <TextView
         android:id="@+id/team2Score"

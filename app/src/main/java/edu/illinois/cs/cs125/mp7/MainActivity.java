@@ -52,6 +52,13 @@ public class MainActivity extends AppCompatActivity {
         resetButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View h) {
                 // Code here executes on main thread after user presses button
+                String team1Score = team1ScoreString.getText().toString();
+                int team1ScoreInt = Integer.parseInt(team1Score);
+                while (team1ScoreInt >= 1) {
+                    team1ScoreInt--;
+                }
+                team1Score = String.valueOf(team1ScoreInt);
+                team1ScoreString.setText(team1Score);
                 Log.v("StringResetButtonSta", "reset button pressed");
                 }
                 }
