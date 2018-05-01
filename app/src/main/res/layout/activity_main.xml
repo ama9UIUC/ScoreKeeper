@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity">
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="ring">
+        <solid android:color="#FFFFFF"/>
+
+    </shape>
+
+    <TextView
+        android:id="@+id/team2Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/team1Score"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="77dp"
+        android:text="25"
+        android:textSize="120sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="97dp" />
+
+    <TextView
+        android:id="@+id/team1Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/team1Score"
+        android:text="30"
+        android:textSize="120sp"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="97dp" />
+
+    <TextView
+        android:id="@+id/team1Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Current Score"
+        android:textSize="60sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/team2Score"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="279dp">
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/minusButton2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignEnd="@+id/team1Score"
+        android:layout_alignTop="@+id/minusButton1"
+        android:text="-"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/plusButton2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignEnd="@+id/team1Score"
+        android:layout_alignTop="@+id/plusButton1"
+        android:text="+"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="121dp"
+        android:text="RESET"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <Button
+        android:id="@+id/minusButton1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/team1Score"
+        android:layout_marginBottom="27dp"
+        android:text="-"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="304dp" />
+
+
+    <Button
+        android:id="@+id/plusButton1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/team1Score"
+        android:layout_marginBottom="192dp"
+        android:text="+"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+</RelativeLayout>
+
+
+
+
