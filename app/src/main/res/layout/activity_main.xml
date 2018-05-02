@@ -19,6 +19,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="117dp"
         android:text="0"
+        android:textColor="#01579B"
         android:textSize="120sp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="97dp" />
@@ -29,6 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/team2Score"
         android:text="0"
+        android:textColor="#FF3D00"
         android:textSize="120sp"
         tools:layout_editor_absoluteX="223dp"
         tools:layout_editor_absoluteY="97dp" />
@@ -120,6 +122,8 @@
         android:layout_height="75dp"
         android:layout_alignParentLeft="true"
         android:layout_marginTop="70dp"
+        android:textColor="#FF3D00"
+        android:textSize="25sp"
         android:inputType="text"
         />
 
@@ -130,7 +134,8 @@
         android:layout_alignParentRight="true"
         android:layout_marginTop="70dp"
         android:textColor="#01579B"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textSize="25sp"/>
 
     <EditText
         android:id="@+id/WinningScore"
