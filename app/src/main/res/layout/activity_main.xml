@@ -15,7 +15,7 @@
         android:id="@+id/team2Score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/CurrentScore"
+        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="117dp"
         android:text="0"
@@ -37,10 +37,10 @@
         android:id="@+id/CurrentScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
         android:layout_centerHorizontal="true"
-        android:text="Winning Score"
-        android:textSize="60sp"
+        android:text= "Winning Score:"
+        android:textSize="35sp"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
@@ -123,12 +123,22 @@
         />
 
     <EditText
+        android:id="@+id/team2Name"
         android:layout_width="150dp"
         android:layout_height="75dp"
         android:layout_alignParentRight="true"
         android:layout_marginTop="70dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/WinningScore"
+        android:layout_width="135dp"
+        android:layout_height="75dp"
+        android:layout_alignRight="@+id/team2Score"
+        android:layout_alignTop="@+id/CurrentScore"
         android:inputType="text"
-        />
+        android:textAlignment="center"
+        android:textSize="50sp" />
 
 </RelativeLayout>
 
