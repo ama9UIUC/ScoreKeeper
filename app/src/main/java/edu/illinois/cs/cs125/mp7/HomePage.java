@@ -12,12 +12,12 @@ import android.widget.Toast;
 
 public class HomePage extends AppCompatActivity {
     ImageButton basketballPicture;
+    ImageButton cricketBallPicture;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
-
 
 
         basketballPicture = (ImageButton) findViewById(R.id.basketballPicture);
@@ -38,10 +38,24 @@ public class HomePage extends AppCompatActivity {
 
         });
 
+        cricketBallPicture = (ImageButton) findViewById(R.id.cricketBallPicture);
+        cricketBallPicture.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // code that executes for the basketball image button
+                Intent cricketBallPicIntent = new Intent(HomePage.this, CricketScoreActivity.class);
+                startActivity(cricketBallPicIntent);
+                Context context = getApplicationContext();
+                CharSequence text = "Input home country";
+                int duration = Toast.LENGTH_SHORT;
 
-
-
-
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+                Log.v("cricketBallIntent", "cricket intent pressed");
+            }
 
     }
+        );
+
+}
 }
