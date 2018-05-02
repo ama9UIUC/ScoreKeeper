@@ -24,8 +24,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
     <ImageButton
         android:id="@+id/cricketBallPicture"
-        android:layout_width="214dp"
-        android:layout_height="150dp"
+        android:layout_width="239dp"
+        android:layout_height="164dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="69dp"
@@ -40,9 +40,9 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="Score Keeper"
+        android:text="The Scorekeeper"
         android:textColor="#F000"
-        android:textSize="60sp"
+        android:textSize="50sp"
         tools:layout_editor_absoluteX="27dp"
         tools:layout_editor_absoluteY="5dp" />
 
@@ -56,7 +56,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         android:textSize="40sp"
         android:text="CHOOSE YOUR SPORT"
         android:background="@android:color/transparent"
-        android:textColor="#F000"
+        android:textColor="#0D47A1"
         />
 
     />

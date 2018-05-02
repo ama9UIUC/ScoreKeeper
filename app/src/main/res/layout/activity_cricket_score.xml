@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,12 +9,81 @@
     android:background="@drawable/cricket_background_picture"
 >
 
+    <EditText
+        android:layout_width="159dp"
+        android:layout_height="93dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:inputType="text"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/team2Name"
+        android:layout_width="169dp"
+        android:layout_height="95dp"
+        android:inputType="text"
+        android:textSize="40sp" />
+
+
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:text="Score"
-        android:textSize="60sp"
+        android:id="@+id/team2Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="117dp"
+        android:text="0"
+        android:textSize="120sp"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="172dp" />
-</android.support.constraint.ConstraintLayout>
+        tools:layout_editor_absoluteY="97dp" />
+
+    <TextView
+        android:id="@+id/team1Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/team2Score"
+        android:text="0"
+        android:textSize="120sp"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="97dp" />
+
+    <ImageButton
+        android:id="@+id/fourHitButton2"
+        android:layout_width="133dp"
+        android:layout_height="139dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/fourHitButton1"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/four_signal_picture" />
+
+    <ImageButton
+        android:id="@+id/sixHitButton1"
+        android:layout_width="146dp"
+        android:layout_height="149dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/six_signal_picture" />
+
+    <ImageButton
+        android:id="@+id/fourHitButton1"
+        android:layout_width="133dp"
+        android:layout_height="139dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="168dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/four_signal_picture" />
+
+    <ImageButton
+        android:id="@+id/sixHitButton2"
+        android:layout_width="146dp"
+        android:layout_height="149dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/six_signal_picture" />
+
+</RelativeLayout>

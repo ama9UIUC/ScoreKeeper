@@ -41,6 +41,7 @@
         android:layout_centerHorizontal="true"
         android:text= "Winning Score:"
         android:textSize="35sp"
+        android:textColor="#FF5722"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
@@ -128,6 +129,7 @@
         android:layout_height="75dp"
         android:layout_alignParentRight="true"
         android:layout_marginTop="70dp"
+        android:textColor="#01579B"
         android:inputType="text" />
 
     <EditText
