@@ -5,19 +5,35 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomePage">
+    tools:context=".HomePage"
+    android:background="@drawable/basketball_court_photo"
+>
 
     <ImageButton
         android:id="@+id/basketballPicture"
+        app:srcCompat="@drawable/basketball_picture"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="222dp"
-        android:scaleType="fitCenter"
+        android:layout_alignLeft="@+id/appName"
+        android:layout_marginBottom="238dp"
         android:adjustViewBounds="true"
-        app:srcCompat="@drawable/basketball_picture"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="226dp" />
+        android:background="@null"
+        android:scaleType="fitCenter"
+         />
+
+    <ImageButton
+        android:id="@+id/cricketBallPicture"
+        app:srcCompat="@drawable/cricket_ball"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="158dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        />
 
     <TextView
         android:id="@+id/appName"
@@ -26,11 +42,25 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:text="Score Keeper"
+        android:textColor="#F000"
         android:textSize="60sp"
         tools:layout_editor_absoluteX="27dp"
         tools:layout_editor_absoluteY="5dp" />
 
+    <TextView
+        android:id="@+id/whichSport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="192dp"
+        android:textSize="40sp"
+        android:text="CHOOSE YOUR SPORT"
+        android:background="@android:color/transparent"
+        android:textColor="#F000"
         />
+
+    />
 
 
     </RelativeLayout>
