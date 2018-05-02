@@ -114,6 +114,22 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="70dp"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="70dp"
+        android:inputType="text"
+        />
+
 </RelativeLayout>
 
 
